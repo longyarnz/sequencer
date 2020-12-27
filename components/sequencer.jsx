@@ -67,6 +67,7 @@ export default function Sequencer() {
     duration[e.target.id] = parseInt(e.target.value)
     setDuration([...duration])
   }
+  
   const setCues = () => {
     duration.forEach((time, index) => {
       const start = intervals.current[index - 1]?.end ?? 1
